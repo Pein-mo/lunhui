@@ -4,7 +4,7 @@
 $secret = "q20031120";
 // Path to your respostory on your server.
 // e.g. "/var/www/respostory"
-$path = "/www/wwwroot/git.mo1120.com";
+$path = "/www/wwwroot/lh.mo1120.com";
 // Headers deliveried from GitHub
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'];
 if ($signature) {
