@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+   <title>解决方案 玉林北流万点星辰络科技有限公司、北流网站建设开发、北流微信小程序开发、北流APP开发</title>
+   <meta name="keywords" content="解决方案,万点星辰科技有限公司的解决方案" />
+   <meta name="description" content="玉林北流万点星辰络科技有限公司、北流网站建设开发解决方案、北流微信小程序开发解决方案、北流APP开发解决方案、北流微信公众号开发解决方案">
+   <meta name="author" content="北流万点星辰网络科技">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="baidu-site-verification" content="tBwZ6Fxcdt" />
+  <meta name="360-site-verification" content="c69a34db1c7aebca6a6c16fa9c65f1ae" />
+  
+  <link rel="alternate icon" type="__static__/img/2.png" href="__static__/img/2.png">
+  <link rel="stylesheet" href="__static__/css/amazeui.css"/>
+  <link rel="stylesheet" href="__static__/css/style.css"/>
+</head>
+<body>
+{include file="public:header" /}
+<div class="toppic">
+	<div class="am-container-1">
+	 <div class="toppic-title left">
+			<i class="am-icon-lightbulb-o toppic-title-i"></i>
+			<span class="toppic-title-span">解决方案</span>
+			<p>Solutions</p>
+		</div>
+		<div class="right toppic-progress">
+			<span><a href="index.html" class="w-white">首页</a></span>
+			<i class=" am-icon-arrow-circle-right w-white"></i>
+			<span><a href="{:url('Solutions/index')}" class="w-white">解决方案</a></span>
+		</div>
+	</div>
+</div>
+
+		
+
+  
+   <div data-am-widget="tabs"class="am-tabs am-tabs-d2 ">
+
+      <ul class="am-tabs-nav am-cf solutions-tabs-ul ">
+      		<!--{foreach name="cate" item="vo" key='k'}
+      			<li class="am-active solutions-tabs-ul-li{$k+1}"><a href="[data-tab-panel-{$k}]" ><i {if condition="$k % 2 eq 0"}class=" am-icon-desktop" {else/}class=" am-icon-mobile-phone mobile-phone"{/if}></i><span>{$vo.name}</span></a></li>
+      		{/foreach}-->
+         <li class="am-active solutions-tabs-ul-li1"><a href="[data-tab-panel-0]" ><i class=" am-icon-desktop"></i><span>{$cate[0]['name']}</span></a></li>
+          <li class="solutions-tabs-ul-li2"><a href="[data-tab-panel-1]"><i class=" am-icon-mobile-phone mobile-phone"></i><span>{$cate[1]['name']}</span></a></li>
+          <li class="solutions-tabs-ul-li3"><a href="[data-tab-panel-2]" ><i class=" am-icon-desktop"></i><span>{$cate[2]['name']}</span></a></li>
+          <li class="solutions-tabs-ul-li4"><a href="[data-tab-panel-3]"><i class=" am-icon-mobile-phone mobile-phone"></i><span>{$cate[3]['name']}</span></a></li>
+      </ul>
+
+      <div class="am-tabs-bd solutions-tabs-content ">
+          <div data-tab-panel-0 class="am-tab-panel am-active">
+          	<ul class=" solutions-content-ul">
+          		{foreach name="solu1" item="v" key='k'}
+            	<li class="am-u-sm-12 am-u-md-6 am-u-lg-12">
+            		<a href="{:url('Solutions/info',['id'=>$v['id']])}">
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-3 solution-tabs-img">
+            			<img src="__uploads__/{$v.img}" />
+            		</div>
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-9 solution-tabs-words">
+            			<h5>{$v.title}</h5>
+            			<p>{$v.remark}</p>
+            		</div>
+            		</a>
+            	</li>
+            	{/foreach}
+            	<div class="clear"></div>
+            </ul>
+            
+          </div>
+          <div data-tab-panel-1 class="am-tab-panel ">
+             <ul class="am-container-1 solutions-content-ul">
+            	{foreach name="solu2" item="v" key='k'}
+            	<li class="am-u-sm-12 am-u-md-6 am-u-lg-12">
+            		<a href="{:url('Solutions/info',['id'=>$v['id']])}">
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-3 solution-tabs-img">
+            			<img src="__uploads__/{$v.img}" />
+            		</div>
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-9 solution-tabs-words">
+            			<h5>{$v.title}</h5>
+            			<p>{$v.remark}</p>
+            		</div>
+            		</a>
+            	</li>
+            	{/foreach}
+            </ul>
+          </div>
+          <div data-tab-panel-2 class="am-tab-panel ">
+            <ul class="am-container-1 solutions-content-ul">
+            	{foreach name="solu3" item="v" key='k'}
+            	<li class="am-u-sm-12 am-u-md-6 am-u-lg-12">
+            		<a href="{:url('Solutions/info',['id'=>$v['id']])}">
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-3 solution-tabs-img">
+            			<img src="__uploads__/{$v.img}" />
+            		</div>
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-9 solution-tabs-words">
+            			<h5>{$v.title}</h5>
+            			<p>{$v.remark}</p>
+            		</div>
+            		</a>
+            	</li>
+            	{/foreach}
+            </ul>
+          </div>
+          <div data-tab-panel-3 class="am-tab-panel ">
+            <ul class="am-container-1 solutions-content-ul">
+            	{foreach name="solu4" item="v" key='k'}
+            	<li class="am-u-sm-12 am-u-md-6 am-u-lg-12">
+            		<a href="{:url('Solutions/info',['id'=>$v['id']])}">
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-3 solution-tabs-img">
+            			<img src="__uploads__/{$v.img}" />
+            		</div>
+            		<div class="am-u-sm-12 am-u-md-12 am-u-lg-9 solution-tabs-words">
+            			<h5>{$v.title}</h5>
+            			<p>{$v.remark}</p>
+            		</div>
+            		</a>
+            	</li>
+            	{/foreach}
+            </ul>
+          </div>
+      </div>
+  </div>
+		
+</div>
+{include file="public:foot" /}

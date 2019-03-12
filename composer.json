@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpexcel/phpexcel": "^1.7",
+        "jaeger/querylist": "^4.0",
+        "phpoffice/phpexcel": "^1.8"
+    }
+}

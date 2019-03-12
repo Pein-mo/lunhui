@@ -1,0 +1,30 @@
+
+<header class="am-topbar header">
+	<div class="am-container-1">
+		<div class="left hw-logo">
+		  <img class=" logo" src="__static__/img/wandian.jpg"></img>
+		  <!-- <img class="word" src="__static__/img/hw-word.png"></img> -->
+    </div>
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+          data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+      class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse right" id="doc-topbar-collapse">
+    
+
+    <div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
+      <ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
+      <li {if condition="$menu eq 'index'"}class="hw-menu-active"{/if}><a href="{:url('Index/index')}">首页</a></li>
+      <li {if condition="$menu eq 'solutions'"}class="hw-menu-active"{/if}><a href="{:url('Solutions/index')}">解决方案</a></li>
+      <li {if condition="$menu eq 'product'"}class="hw-menu-active"{/if}><a href="{:url('Product/index')}">产品展示 </a></li>
+      <li {if condition="$menu eq 'customer'"}class="hw-menu-active"{/if}><a href="{:url('Customer/index')}">客户案例</a></li>
+      <li {if condition="$menu eq 'server'"}class="hw-menu-active"{/if}><a href="{:url('Server/index')}">服务中心 </a></li>
+      <li {if condition="$menu eq 'news'"}class="hw-menu-active"{/if}><a href="{:url('News/index')}">新闻动态 </a></li>
+      <li {if condition="$menu eq 'about'"}class="hw-menu-active"{/if}><a href="{:url('About/index')}">关于我们</a></li>
+      <li {if condition="$menu eq 'recruit'"}class="hw-menu-active"{/if}><a href="{:url('Recruit/index')}">招贤纳士 </a></li>
+    </ul>
+    </div>
+
+  </div>
+  </div>
+</header>

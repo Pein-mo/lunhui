@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+   <title>服务中心 玉林北流万点星辰络科技有限公司、北流网站建设、北流微信小程序、北流APP</title>
+   <meta name="keywords" content="服务中心,关于万点星辰科技有限公司服务中心" />
+   <meta name="description" content="玉林北流万点星辰络科技有限公司、北流网站建设开发、北流微信小程序开发、北流APP开发、北流微信公众号开发">
+   <meta name="author" content="北流万点星辰网络科技">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="baidu-site-verification" content="tBwZ6Fxcdt" />
+  <meta name="360-site-verification" content="c69a34db1c7aebca6a6c16fa9c65f1ae" />
+  
+  <link rel="alternate icon" type="__static__/img/2.png" href="__static__/img/2.png">
+  <link rel="stylesheet" href="__static__/css/amazeui.css"/>
+  <link rel="stylesheet" href="__static__/css/style.css"/>
+</head>
+<body>
+{include file="public:header" /}
+<div class="toppic">
+	 <div class="am-container-1">
+	 <div class="toppic-title left">
+			<i class="am-icon-hand-paper-o toppic-title-i"></i>
+			<span class="toppic-title-span">服务中心</span>
+			<p>Service Center</p>
+		</div>
+		<div class="right toppic-progress">
+			<span><a href="{:url('Index/index')}" class="w-white">首页</a></span>
+			<i class=" am-icon-arrow-circle-right w-white"></i>
+			<span><a href="{:url('Server/index')}" class="w-white">服务中心</a></span>
+		</div>
+	</div>
+</div>
+
+<div class=" am-container-1">
+	<div class="service-center">
+	    <ul class="service-ul">
+	    	{foreach name="data" item="v" key="k"}
+	    	<li class="am-u-lg-12 am-u-md-12 am-u-sm-12">
+	    		<div class="am-u-lg-8 am-u-md-8 am-u-sm-12 service-content">
+	    			<h4 class="w-blue">{$v.title}</h4>
+	    			<p>{$v.remark}</p>
+	    		</div>
+	    		<div class="am-u-lg-4 am-u-md-4 am-u-sm-12 service-img">
+	    		   <img src="__uploads__/{$v.img}" />	
+	    		</div>
+	    	</li>
+	    	{/foreach}
+	    </ul>
+	</div>
+</div>
+{include file="public:foot" /}
+
+
+
+
+

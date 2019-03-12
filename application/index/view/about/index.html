@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+   <title>关于我们 玉林北流万点星辰络科技有限公司、北流网站建设、北流微信小程序、北流APP</title>
+   <meta name="keywords" content="关于我们,关于万点星辰科技有限公司" />
+   <meta name="description" content="玉林北流万点星辰络科技有限公司、北流网站建设开发、北流微信小程序开发、北流APP开发、北流微信公众号开发">
+   <meta name="author" content="北流万点星辰网络科技">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="baidu-site-verification" content="tBwZ6Fxcdt" />
+  <meta name="360-site-verification" content="c69a34db1c7aebca6a6c16fa9c65f1ae" />
+  
+  <link rel="alternate icon" type="__static__/img/2.png" href="__static__/img/2.png">
+  <link rel="stylesheet" href="__static__/css/amazeui.css"/>
+  <link rel="stylesheet" href="__static__/css/style.css"/>
+</head>
+<body>
+{include file="public:header" /}
+<div class="toppic">
+	 <div class="am-container-1">
+	 <div class="toppic-title left">
+			<i class="am-icon-paper-plane toppic-title-i"></i>
+			<span class="toppic-title-span">关于我们</span>
+			<p>About Us</p>
+		</div>
+		<div class="right toppic-progress">
+			<span><a href="{:url('Index/index')}" class="w-white">首页</a></span>
+			<i class=" am-icon-arrow-circle-right w-white"></i>
+			<span><a href="{:url('About/index')}" class="w-white">关于我们</a></span>
+		</div>
+	</div>
+</div>
+
+<div class=" am-container-1">
+	<div class="part-title part-title-mar">
+			<a href="customer-case.html">
+			<i class=" am-icon-paper-plane part-title-i"></i>
+			<span class="part-title-span">关于万点星辰</span>
+			<p>About wandianxingchen</p>
+			</a>
+		</div>
+	<div class="company-intro">
+		{$config.web_about_us}
+	</div>
+</div>
+<div class="gray-li company-thought-all" >
+	<div class=" am-container-1">
+			<ul class="company-thought">
+				<li >
+				  <div class="thought-all">
+				  	<i class="am-icon-circle-o-notch"></i>
+				  	<span>企业理念</span>
+				  	<div class="thought-all-none">
+				  	    <h5>专注 专业</h5>
+				    </div>
+				  </div>
+				  
+				</li>
+				<li >
+				  <div class="thought-all">
+				  	<i class="am-icon-hand-o-right"></i>
+				  	<span>服务理念</span>
+				  	<div class="thought-all-none">
+				  	    <h5>实务 用心</h5>
+				    </div>
+				  </div>	
+				</li>
+				<li >
+				  <div class="thought-all">
+				  	<i class="am-icon-bar-chart"></i>
+				  	<span>发展方向</span>
+				  	<div class="thought-all-none">
+				  	    <h5>精益求精</h5>
+				    </div>
+				  </div>	
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+</div>
+
+	
+
+<div class=" am-container-1">
+	<div class="part-title part-title-mar">
+			<a href="customer-case.html">
+			<i class=" am-icon-home part-title-i"></i>
+			<span class="part-title-span">办公环境</span>
+			<p>Office Space</p>
+			</a>
+		</div>
+	<div class="office-space">
+		{foreach $data as $k=>$v}
+		<div  class="{if condition='$k eq 0'}cam-u-lg-6 am-u-md-6 am-u-sm-12{else/}cam-u-lg-3 am-u-md-3 am-u-sm-6{/if}">
+			<img src="__uploads__/{$v.photo}"/>
+		</div>
+		{/foreach}
+		<div class="clear"></div>
+	</div>
+	
+</div>
+</div>
+<div class=" am-container-1">
+	<div class="part-title part-title-mar">
+			<a href="">
+			<i class=" am-icon-comments-o part-title-i"></i>
+			<span class="part-title-span">联系我们</span>
+			<p>Contact Us</p>
+			</a>
+		</div>
+</div>
+<div class="gray-li">
+<div class=" am-container-1">
+	<div class="contact-us">
+		 <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
+		 	<img src="__uploads__/{$img.photo}" />
+		 </div>
+		 <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
+		 	 <ul class="contact-add">
+		 	 	<li>
+		 	 		<div><i class=" am-icon-map-marker"></i><span class="contact-add-1">{$config.web_address}</span></div>
+		 	 	</li>
+		 	 	<li>
+		 	 		<div><i class=" am-icon-phone"></i><span>{$config.web_landline}</span></div>		 	 		
+		 	 	</li>
+		 	 	<li>
+		 	 		<div><i class=" am-icon-mobile mobile"></i><span>{$config.web_mobile}</span></div>	 	 		
+		 	 	</li>
+		 	 	<li>
+		 	 		<div><i class=" am-icon-envelope-o"></i><span>{$config.web_email}</span></div>		 	 		
+		 	 	</li>
+		 	 </ul>	 	
+		 </div>
+		 <div class="clear"></div>
+	</div>
+</div>
+</div>
+{include file="public:foot" /}

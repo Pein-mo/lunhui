@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+   <title>玉林北流万点星辰络科技有限公司、北流网站建设开发、北流微信小程序开发、北流APP开发 玉林北流万点星辰络科技有限公司、北流网站建设开发、北流微信小程序开发、北流APP开发 </title>
+   <meta name="keywords" content="玉林北流万点星辰络科技有限公司、北流网站建设开发、北流微信小程序开发、北流APP开发" />
+   <meta name="description" content="玉林北流万点星辰络科技有限公司、北流网站建设开发、北流微信小程序开发、北流APP开发">
+   <meta name="author" content="北流万点星辰网络科技">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="baidu-site-verification" content="tBwZ6Fxcdt" />
+  <meta name="360-site-verification" content="c69a34db1c7aebca6a6c16fa9c65f1ae" />
+  
+  <link rel="alternate icon" type="__static__/img/2.png" href="__static__/img/2.png">
+  <link rel="stylesheet" href="__static__/css/amazeui.css"/>
+  <link rel="stylesheet" href="__static__/css/style.css"/>
+</head>
+<body>
+{include file="public:header" /}
+<div class="rollpic">
+	 <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
+	  <ul class="am-slides">
+	  	{foreach name="img" item="v"}
+	      <li><img src="__uploads__/{$v.img}"/></li>
+	      {/foreach}
+	  </ul>
+    </div>
+</div>
+<div class="am-container-1">
+	<div class="solutions part-all">
+		<div class="part-title">
+			<a href="solutions.html">
+			<i class="am-icon-lightbulb-o part-title-i"></i>
+			<span class="part-title-span">解决方案</span>
+			<p>Solutions</p>
+			</a>
+		</div>
+		<ul class="am-g part-content solutions-content">
+		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+		  	<i class="am-icon-safari solution-circle"></i>
+		  	<span class="solutions-title">{$a[0]['name']}</span>
+		  	<p class="solutions-way">{$a[0]['remark']}</p>
+		  </li>
+		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+		  	<i class="am-icon-magic solution-circle"></i>
+		  	<span class="solutions-title">{$a[1]['name']}</span>
+		  	<p class="solutions-way">{$a[1]['remark']}</p>
+		  </li>
+		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+		  	<i class="am-icon-phone solution-circle"></i>
+		  	<span class="solutions-title">{$a[2]['name']}</span>
+		  	<p class="solutions-way">{$a[2]['remark']}</p>
+		  </li>
+		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+		  	<i class="am-icon-hacker-news solution-circle"></i>
+		  	<span class="solutions-title">{$a[3]['name']}</span>
+		  	<p class="solutions-way">{$a[3]['remark']}</p>
+		  </li>
+		  
+		</ul>
+		
+	</div>
+	</div>
+	<div class="gray-li">
+	<div class="customer-case part-all ">
+		<div class="part-title">
+			<a href="{:url('Customer/index')}">
+			<i class=" am-icon-briefcase part-title-i"></i>
+			<span class="part-title-span">客户案例</span>
+			<p>Customer Case</p>
+			</a>
+		</div>
+	
+	
+		 <ul data-am-widget="gallery" class=" am-avg-sm-1
+  am-avg-md-4 am-avg-lg-4 am-gallery-bordered customer-case-content" >
+      {foreach name="customer" item="vo"}
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="#" >
+              <img src="__uploads__/{$vo.img}"  />
+                
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">{$vo.title}</h3>
+              <p>{$vo.create_time|date='Y-m-d',###}</p>
+              <a href="{:url('Customer/info',['id'=>$vo['id']])}"><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      {/foreach}
+      
+      
+  </ul>
+		<div class="lan-bott">
+			<div class="left"><span>全方位解决方案,为您轻松解决不同问题</span>
+				<p>A full range of solutions for you to solve different problems</p>
+			</div>
+			<div class="right">
+				<a href="{:url('Customer/index')}">
+					<span class="see-more">查看更多<i class="am-icon-angle-double-right"></i></span>
+				</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="part-title">
+		    	
+		</div>
+		</div>
+</div>	
+	
+
+
+
+		
+		
+<div class=" news-all">
+	<div class="am-container-1">
+<div class="news part-all">
+		<div class="part-title">
+			<a href="{:url('News/index')}">
+			<i class="am-icon-newspaper-o part-title-i"></i>
+			<span class="part-title-span">新闻动态</span>
+			<p>Hengwang News</p>
+			</a>
+		</div>
+		<div class="news-content ">
+				<ul class="news-content-ul">
+					{foreach name="news" item="v"}
+					<li class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+						<a href="#">
+						    <div class=" am-u-sm-12 am-u-md-12 am-u-lg-5">
+						    	<div class="news-img">
+						    	<img src="__uploads__/{$v.photo}"></img>
+						    	</div>
+						    </div>
+						    <div  class=" am-u-sm-12 am-u-md-12 am-u-lg-7">
+										<span class="news-right-title">{$v.title}</span>
+										<p class="news-right-time">{$v.create_time|date='Y-m-d',###}</p>
+										<p class="news-right-words">{$v.remark}</p>
+										<a href="{:url('News/info',['id'=>$v['id']])}"><span class="see-more2">查看更多<i class="am-icon-angle-double-right"></i></span></a>
+								 </div>	
+						<div class="clear"></div>
+						</a>
+					</li>
+					{/foreach}
+							
+					<div class="clear"></div>
+				</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+<!--<div class="three-reason">
+			<div class="part-title three-reason-title">
+			<span class="part-title-span w-white">选择恒望的三大理由</span>
+			<p class="w-white">Why Choose Hengwang</p>
+			
+		</div>
+			<ul class="am-g part-content three-reason-content">
+			  <li class="am-u-sm-4 am-u-md-4 am-u-lg-4">
+			  	<div class="three-reason-img1 "></div>
+			  	<p class="reason-title w-white">规模优势<br/>Scale advantage</p>
+			  </li>
+			  <li class="am-u-sm-4 am-u-md-4 am-u-lg-4">
+			  	<div class="three-reason-img2 "></div>
+			  	<p class="reason-title w-white ">领先技术<br/>Leading technology</p>
+			  </li>
+			  <li class="am-u-sm-4 am-u-md-4 am-u-lg-4">
+			  	<div class="three-reason-img3 "></div>
+			  	<p class="reason-title w-white">整合能力<br/>Integration capability</p>
+			  </li>
+		</ul>
+		</div>-->
+<div class="part-all gray-li">
+<div class="customer  am-container-1">
+		<div class="part-title">
+			<i class="am-icon-users part-title-i"></i>
+			<span class="part-title-span">服务客户</span>
+			<p>Serve Customers</p>
+		</div>
+		
+		<div class="am-slider am-slider-default am-slider-carousel part-all" data-am-flexslider="{itemWidth:150, itemMargin: 5, slideshow: false}" style="  background-color: #f0eeed; box-shadow:none;">
+  <ul class="am-slides">
+  	{foreach name="cust_img" item="v"}
+    <li><img src="__uploads__/{$v.img}"/></li>
+    {/foreach}
+  </ul>
+</div>
+		<!--<ul class="customer-content">
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="__static__/img/ptn4.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="__static__/img/ptn5.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="__static__/img/ptn6.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="__static__/img/ptn7.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="__static__/img/ptn8.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="__static__/img/ptn4.png"/></div></li>
+			<div class="clear"></div>
+		</ul>-->
+</div>
+</div>
+{include file="public:foot" /}

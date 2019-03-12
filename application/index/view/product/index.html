@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+   <title>产品展示 玉林北流万点星辰络科技有限公司、北流网站建设开发展示、北流微信小程序开发展示、北流APP开发展示</title>
+   <meta name="keywords" content="产品展示,万点星辰科技有限公司产品展示" />
+   <meta name="description" content="玉林北流万点星辰络科技有限公司、北流网站建设开发产品展示、北流微信小程序开发产品展示、北流APP开发产品展示、北流微信公众号开发产品展示">
+   <meta name="author" content="北流万点星辰网络科技">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="baidu-site-verification" content="tBwZ6Fxcdt" />
+  <meta name="360-site-verification" content="c69a34db1c7aebca6a6c16fa9c65f1ae" />
+  
+  <link rel="alternate icon" type="__static__/img/2.png" href="__static__/img/2.png">
+  <link rel="stylesheet" href="__static__/css/amazeui.css"/>
+  <link rel="stylesheet" href="__static__/css/style.css"/>
+</head>
+<body>
+{include file="public:header" /}
+<div class="toppic">
+	 <div class="am-container-1">
+	 <div class="toppic-title left">
+			<i class="am-icon-dropbox toppic-title-i"></i>
+			<span class="toppic-title-span">产品展示</span>
+			<p>Product Show</p>
+		</div>
+		<div class="right toppic-progress">
+			<span><a href="{:url('Index/index')}" class="w-white">首页</a></span>
+			<i class=" am-icon-arrow-circle-right w-white"></i>
+			<span><a href="{:url('Product/index')}" class="w-white">产品展示</a></span>
+		</div>
+	</div>
+</div>
+
+<div >
+	<ul class=" product-show-ul">
+		{foreach name="data" item="v" key="k"}
+	    <li {if condition="$k % 2 eq 0"}{else/}class="gray-li"{/if}>
+	    	<div class="product-content">
+			    	<div class="left am-u-sm-12 am-u-md-6 am-u-lg-6 {if condition='$k % 2 eq 0'}product-content-right{else/}product-content-left{/if}">
+			    		<div class="product-show-title">
+			    			<h3>{$v.title}</h3>
+			    			<span>{$v.name}</span>
+			    		</div>
+			    	
+			    	<div class="product-show-content">
+			    		<div class="product-add">
+			    			<span>查看地址：</span>
+			    			<div><a href="http://{$v.url}" target="_blank">{$v.url}</a></div>
+			    			<i class="am-icon-dribbble"></i>
+			    		</div>
+			    		<div class="product-intro">
+			    			<span>详情介绍：</span>
+			    			<div><p>{$v.remark}</p></div>
+			    		  <i class="am-icon-tasks"></i>
+			    		</div>
+			    	</div>
+			    	</div>
+			    	<div class="right am-u-sm-12 am-u-md-6 am-u-lg-6 {if condition='$k % 2 eq 0'}product-content-left{else/}product-content-right{/if}">
+			    		<img class="product-img" src="__uploads__/{$v.img}" />
+			    	</div>	
+			    	<div class="clear"></div>
+	    	</div>
+	    </li>	
+	    {/foreach}
+	    
+	    <div class="clear"></div>
+	</ul>
+</div>
+
+  
+   
+		
+</div>
+{include file="public:foot" /}
