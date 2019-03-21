@@ -48,7 +48,7 @@ class Ad extends Base
     public function add_ad()
     {
         if(request()->isAjax()){
-
+            
             $param = input('post.');
             $param['closed'] = 0;
             $ad = new AdModel();
